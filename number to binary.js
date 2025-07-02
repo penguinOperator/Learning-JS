@@ -1,4 +1,4 @@
-let myNumber = 123; // sets myNumber to 123. the ; ends the line for clarity
+let myNumber = 5; // sets myNumber to 123. the ; ends the line for clarity
 let binary = ""; // sets binary as an empty string
 
 while (myNumber > 0) { // loop until myNumber is 0
