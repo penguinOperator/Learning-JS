@@ -1,2 +1,2 @@
 # Learning-JS
-Just learning JavaScript here
+Just learning JavaScript here.
