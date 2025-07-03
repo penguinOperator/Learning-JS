@@ -6,6 +6,6 @@ for (let i = 0; i <= 50; i++) { //set value of 0 to i. i is less than or equal t
 
 // easier way
 
-// let number = 6;
-// let message = (number % 2 === 0) ? "Even" : "Odd";
-// console.log(message); // Outputs: "Odd"
+let number = 6;
+let message = (number % 2 === 0) ? "Even" : "Odd";
+console.log(message);
