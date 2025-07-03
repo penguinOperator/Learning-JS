@@ -1,14 +1,9 @@
-let userMonth = ""
+let userInput = "June"
 
-function getZodiac(userMonth) {
-    let signs = {
-        May: "Taurus",
-        June: "Gemini",
-        July: "Cancer"
-    }
+let zodiac = {
+    "May": "Taurus",
+    "June": "Gemini",
+    "July": "Cancer"
+};
 
-    return signs[userMonth]
-}
-
-console.log(getZodiac("May"));
-
+console.log("Your sign is " + zodiac[userInput])
