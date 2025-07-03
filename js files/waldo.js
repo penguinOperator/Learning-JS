@@ -8,11 +8,9 @@ const characters = [
     "Woof"
 ];
 
-let waldoat = characters.indexOf("Waldo")
-
-if (characters["Waldo"] = characters) {
-    console.log(characters.includes("Waldo"))
-    console.log("Found Waldo at " + waldoat)
+if (characters.includes("Waldo")) {
+    let waldoIndex = characters.indexOf("Waldo");
+    console.log("Found Waldo at index " + waldoIndex);
 } else {
-    console.log("Not found")
+    console.log("Not found");
 }
