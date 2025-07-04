@@ -12,20 +12,21 @@ function mean(viewsArray) {
 }
 
 function median(viewsArray) {
-    let length = viewsArray.length
-    sortedStats.sort((a, b) => a - b);
+    let sorted = [...viewsArray].sort((a, b) => a - b); //copies the array selected later on outside of the function. sorts it from smallest to biggest
 
-    if (viewsArray.length % 2 === 0) {
-        console.log("even")
+    let length = sorted.length; //define length as the copied sorted array and gets the length
+    let middle = Math.floor(length / 2); //ddefine middle as round down the number so it wont have decimal, and devide length by 2 to get the middle
+
+    if (length % 2 === 0) { //if length is dividable by 2 and no decimal
+        // even: average of two middle values
+        let medianValue = (sorted[middle - 1] + sorted[middle]) / 2;
+        console.log("Median (even):", medianValue);
     } else {
-        console.log("odd")
+        // odd: middle value
+        let medianValue = sorted[middle];
+        console.log("Median (odd):", medianValue);
     }
 }
 
 median(recentTikTokViews);
-median(recentYouTubeViews);
-median(recentInstagramViews);
-
-mean(recentTikTokViews);
-mean(recentYouTubeViews);
-mean(recentInstagramViews);
+console.log("Mean: " + mean(recentTikTokViews))
