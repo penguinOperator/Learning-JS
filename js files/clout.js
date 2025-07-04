@@ -12,13 +12,14 @@ function mean(viewsArray) {
 }
 
 function median(viewsArray) {
-    let sortedStats = [...viewsArray];
+    let length = viewsArray.length
     sortedStats.sort((a, b) => a - b);
-    for (let i = 0; i < viewsArray.length; i++) {
-        viewsArray = Math.floor(viewsArray / 2)
+
+    if (viewsArray.length % 2 === 0) {
+        console.log("even")
+    } else {
+        console.log("odd")
     }
-    let clout = sortedStats
-    console.log(clout)
 }
 
 median(recentTikTokViews);
