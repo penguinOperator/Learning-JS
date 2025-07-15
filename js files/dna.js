@@ -1,3 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const dnaPieces = ["A", "C", "G", "T"];
 const indexFinds = [];
 
